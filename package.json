@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-materials",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Materials MCP — computed (DFT) materials structures & thermodynamic properties.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-340ddc5a17950ed6640c1f08df076eeea93f266a65815c63000042ead1d44c4e",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-849cf3dc4674213c16d4c9a9e4f864f37ebf9e0f448e689253843b9d461d0835",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
