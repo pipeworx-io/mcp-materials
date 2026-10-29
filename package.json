@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-materials",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Materials MCP — computed (DFT) materials structures & thermodynamic properties.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-materials": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "materials"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-materials.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/materials",
   "pipeworx": {
-    "sourceHash": "v1-b1c670563ed7db9bb514421d3ba8ec73eaa9c83666cf042a361ac7747a87764c",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "materials",
+    "gatewaySlug": "materials",
+    "sourceHash": "v1-8af3eec9b0026ceb15886ed755fab5be9430fafdb5afc0b77f0e38d7d2418bc8",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }
